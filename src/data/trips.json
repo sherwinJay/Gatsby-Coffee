@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Santorini, Greece",
+    "image": "../assets/images/santorini-greece.jpg",
+    "alt": "",
+    "button": "check now"
+  },
+  {
+    "name": "Temple, Japan",
+    "image": "../assets/images/japan-temple.jpg",
+    "alt": "",
+    "button": "check now"
+  },
+  {
+    "name": "Dubrovnik, Croatia",
+    "image": "../assets/images/croatia-dubrovnik-old-town.jpg",
+    "alt": "",
+    "button": "check now"
+  },
+  {
+    "name": "Temple, Indonesia",
+    "image": "../assets/images/img-01.jpg",
+    "alt": "",
+    "button": "check now"
+  }
+]
