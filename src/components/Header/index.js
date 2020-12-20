@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => {
     <header css={mainHeaderContainer}>
       <div css={mainHeader}>
         <div>
-          <Link css={mainNavLinks} to="/">EXPLORE</Link>
+          <Link css={mainNavLinks} to="/">EXPLOR</Link>
         </div>
         <nav css={mainNavContainer}>
           <ul>
