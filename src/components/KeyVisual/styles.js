@@ -1,14 +1,14 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
+import CoffeeKV from '../../assets/images/coffee-kv.jpg'
 
 export const kvContainer = css`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 60px);
   position: relative;
-  margin-top: -60px;
-  background-color: #000;
+  background: url(${CoffeeKV}) #000 center center no-repeat;
 
   :before{
     content: '';
@@ -56,7 +56,7 @@ export const kvContent = css`
   & p {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
   }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Video from '../../assets/videos/video06.mp4'
+import CoffeeKV from '../../assets/images/two-coffeecups.jpg'
 import { kvContainer, kvBg, kvBgContainer, kvContent, kvButton } from './styles'
 
 /** @jsx jsx */
@@ -8,13 +9,10 @@ import { css, jsx } from "@emotion/react";
 const KeyVisual = () => {
   return (
     <div css={kvContainer}>
-      <div css={kvBgContainer}>
-        <video css={kvBg} src={Video} type="video/mp4" autoPlay loop muted playsInline />
-      </div>
       <div css={kvContent}>
-        <h2>Amazing Paradise</h2>
-        <p>Explore top rated tours, hotels and restaurants around the world.</p>
-        <p css={kvButton}>Travel Now</p>
+        <h2>Amazing Coffee Products</h2>
+        <p>As roast dark, iced, strong irish crema whipped ristretto crema. Breve, cup americano filter trifecta est strong redeye half and half.</p>
+        <p css={kvButton}>Order Now</p>
       </div>
     </div>
   )

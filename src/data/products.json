@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Black Coffee",
+    "image": "../assets/images/home-coffee.jpg",
+    "alt": "",
+    "button": "check now"
+  },
+  {
+    "name": "Green Tea",
+    "image": "../assets/images/home-tea.jpg",
+    "alt": "",
+    "button": "check now"
+  },
+  {
+    "name": "Orange Juice",
+    "image": "../assets/images/home-juice.jpg",
+    "alt": "",
+    "button": "check now"
+  }
+]

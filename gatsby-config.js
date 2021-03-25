@@ -3,9 +3,9 @@ require('dotenv').config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Travel`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Coffee`,
+    description: `As roast dark, iced, strong irish crema whipped ristretto crema. Breve, cup americano filter trifecta est strong redeye half and half. Et aftertaste flavour carajillo blue mountain froth, white beans so extraction shop foam.`,
+    author: `sherwin_suva`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

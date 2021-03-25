@@ -12,6 +12,7 @@ import {
   mainNavContainer,
   buttonContainer,
   mainHeaderContainer,
+  mainNavLogo,
 } from "./styles";
 import { navData } from "../../data/NavItems"
 import { FaBars } from "react-icons/fa";
@@ -25,23 +26,23 @@ const navItems = navData.map((navItem, idx) => {
   )
 });
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, toggle }) => {
   return (
     <header css={mainHeaderContainer}>
       <div css={mainHeader}>
         <div>
-          <Link css={mainNavLinks} to="/">EXPLOR</Link>
+          <Link css={mainNavLogo} to="/">KAPEKO</Link>
         </div>
         <nav css={mainNavContainer}>
           <ul>
             { navItems }
           </ul>
         </nav>
-        <div css={mobileIcon}>
-          <FaBars />
-        </div>
         <div css={buttonContainer}>
           <button>Connect with us</button>
+        </div>
+        <div css={mobileIcon}>
+          <FaBars onClick={toggle} />
         </div>
       </div>
     </header>

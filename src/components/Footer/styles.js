@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/react";
 
 export const footerContainer = css`
-  background-color: #010606;
+  background-color: #29180b;
   padding: 20px 0;
   /* position: absolute;
   left: 0;
@@ -17,7 +17,11 @@ export const footerWrapper = css`
   max-width: 1200px;
   margin: 0 auto;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1230px){
+    width: 85%;
+  }
+
+  @media screen and (max-width: 760px) {
     flex-direction: column;
     justify-content: center;
   }
@@ -33,7 +37,7 @@ export const socialmediaContainer = css`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 760px) {
     margin-top: 10px;
   }
 `;
