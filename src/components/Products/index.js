@@ -1,11 +1,12 @@
 import React from 'react'
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
-import { productsContainer, categoryListSection, categoryContainer, productsItemsContainer, productKV, productInfo } from './styles';
+import { productsContainer, categoryListSection, categoryContainer, productsItemsContainer, productInfo } from './styles';
 import {useStaticQuery, graphql, Link } from 'gatsby';
 import Img from "gatsby-image";
 import { useEffect, useState } from 'react';
 import { defaultKV, defaultSection } from '../styles/main';
+import TitleSection from '../PageTitle';
 
 const getContentfulData = graphql`
 {
@@ -24,6 +25,13 @@ const getContentfulData = graphql`
         }
       }
     }
+  },
+  bgImage: file(relativePath: { eq: "product-kv.jpg" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
   }
 }`
 
@@ -32,7 +40,8 @@ const Products = () => {
   const { 
     allContentfulCoffeeItems: { 
       nodes: data
-    }    
+    },
+    bgImage: backgroundImageData     
   } = useStaticQuery(getContentfulData);
 
   const [productList, setProductList] = useState(data);
@@ -72,32 +81,29 @@ const Products = () => {
   const createProductsTemplate = productList.map(product => {
     return (
       <li key={product.id}>   
-          <Img 
-            src={product.image.fluid.src}
-            fluid={product.image.fluid}
-          />
-          <div css={productInfo}>
-            <h3>
-              {product.title}
-            </h3>
-            {/* <p>{product.description.description}</p> */}
-            <button>
-              ₱{product.price}
-            </button>
-          </div>
+        <Img 
+          src={product.image.fluid.src}
+          fluid={product.image.fluid}
+        />
+        <div css={productInfo}>
+          <h3>
+            {product.title}
+          </h3>
+          {/* <p>{product.description.description}</p> */}
+          <button>
+            ₱{product.price}
+          </button>
+        </div>
       </li>
     )
   })
 
   return (
     <>
-      <div css={[productKV, defaultKV]}>
-        <div css={[defaultSection]}>
-          <h1>
-            Our Products
-          </h1>
-        </div>
-      </div>
+      <TitleSection
+        title={"Our Products"} 
+        bgImage={backgroundImageData.childImageSharp.fluid} 
+      />
       <div css={[defaultSection, productsContainer]}>
         <div css={categoryListSection}>
           <ul css={categoryContainer}>

@@ -1,11 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
-import ProductKV from '../../assets/images/product-kv.jpg'
 
-export const productKV = css `
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(${ProductKV}) center no-repeat;
-  background-size: cover;
-`;
 export const productsContainer = css`
   width: 1200px;
   margin: 0 auto;
