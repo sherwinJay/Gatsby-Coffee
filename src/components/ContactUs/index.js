@@ -3,12 +3,11 @@ import React from 'react';
 import { css, jsx } from "@emotion/react";
 import {useStaticQuery, graphql} from 'gatsby';
 import { contactContainer } from './styles';
-import Img from "gatsby-image";
-import { defaultKV, defaultSection } from '../styles/main';
+import { defaultSection } from '../styles/main';
 import TitleSection from '../PageTitle';
 
 const imageData = graphql`
-query {
+{
   bgImage: file(relativePath: { eq: "contact-KV.jpg" }) {
     childImageSharp {
       fluid {

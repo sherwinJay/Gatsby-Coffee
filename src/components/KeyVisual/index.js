@@ -1,10 +1,8 @@
-import React from 'react'
-import Video from '../../assets/videos/video06.mp4'
-import CoffeeKV from '../../assets/images/two-coffeecups.jpg'
-import { kvContainer, kvBg, kvBgContainer, kvContent, kvButton } from './styles'
+import React from 'react';
 
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
+import { kvContainer, kvContent, kvButton } from './styles';
 
 const KeyVisual = () => {
   return (

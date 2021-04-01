@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
+
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
-import {useStaticQuery, graphql, Link } from 'gatsby';
-import Img from "gatsby-image";
 import { reservationSection, defaultSection, reservationContainer} from './styles';
 
 const ReservationSection = () => {

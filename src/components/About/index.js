@@ -4,11 +4,11 @@ import { css, jsx } from "@emotion/react";
 import {useStaticQuery, graphql} from 'gatsby';
 import { aboutContainer } from './styles';
 import Img from "gatsby-image";
-import { defaultKV, defaultSection } from '../styles/main';
+import { defaultSection } from '../styles/main';
 import TitleSection from '../PageTitle';
 
 const imageData = graphql`
-query {
+{
   image: file(relativePath: { eq: "about-coffee.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 800) {
