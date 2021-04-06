@@ -8,9 +8,15 @@ const KeyVisual = () => {
   return (
     <div css={kvContainer}>
       <div css={kvContent}>
-        <h2>Amazing Coffee Products</h2>
-        <p>As roast dark, iced, strong irish crema whipped ristretto crema. Breve, cup americano filter trifecta est strong redeye half and half.</p>
-        <p css={kvButton}>Order Now</p>
+        <h2>
+          Amazing Coffee Products
+        </h2>
+        <p>
+          As roast dark, iced, strong irish crema whipped ristretto crema. Breve, cup americano filter trifecta est strong redeye half and half.
+        </p>
+        <p css={kvButton}>
+          Order Now
+        </p>
       </div>
     </div>
   )

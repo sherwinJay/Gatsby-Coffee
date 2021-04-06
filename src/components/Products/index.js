@@ -18,6 +18,7 @@ const getContentfulData = graphql`
       price,
       title,
       category,
+      slug,
       description {
         description
       },

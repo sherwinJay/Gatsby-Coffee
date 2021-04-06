@@ -16,21 +16,18 @@ query {
   }
 }
 `
-
 const AboutUsSection = () => {
   const { 
     image: data
   } = useStaticQuery(imageData);
 
-  console.log(`aboboutSectionJs: ${data}`)
-
   return (
     <section css={[aboutSection]}>
       <div css={[defaultSection]}>
-        <h2>About Us</h2>
         <div css={aboutContainer}>
           <Img fluid={data.childImageSharp.fluid} />
           <div>
+            <h2>About Us</h2>
             <p>
               Fingerstache heirloom food truck typewriter aesthetic craft beer. Cardigan leggings godard unicorn, cloud bread cred ramps mixtape everyday carry post-ironic listicle chia polaroid kitsch. Waistcoat try-hard artisan beard wayfarers, aesthetic narwhal gastropub squid vegan tote bag venmo gluten-free mixtape cloud bread. Cornhole jean shorts kogi umami ugh vaporware XOXO food truck enamel pin +1 sriracha.
             </p>

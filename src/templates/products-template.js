@@ -8,11 +8,11 @@ import {graphql, Link } from 'gatsby';
 
 export const getLocationData = graphql`
   query GetSingleLocation($title:String) {
-    location: contentfulLocations(slug: {eq: $title}) {
+    location: contentfulCoffeeItems(slug: {eq: $title}) {
       title
       price
-      info {
-        info
+      description {
+        description
       }
       image {
         fluid {
@@ -29,7 +29,7 @@ const Location = ({
       title,
       price,
       image:{ fluid },
-      info:{ info }
+      description:{ description }
     }
   } 
 }) => {
@@ -44,7 +44,7 @@ const Location = ({
         <div css={locationInfoContainer}>
           <h2>{title}</h2>
           <h4>${price}</h4>
-          <p>{info}</p>
+          <p>{description}</p>
         </div>
       </section>
     </Layout>

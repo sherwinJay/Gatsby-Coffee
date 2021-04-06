@@ -49,9 +49,10 @@ export const kvContent = css`
   text-align: center;
 
   & h2 {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 0;
     margin-bottom: 30px;
+    color: #fff;
   }
   & p {
     margin-top: 0;

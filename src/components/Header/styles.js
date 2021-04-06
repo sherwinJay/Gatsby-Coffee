@@ -39,6 +39,10 @@ export const mainNavContainer = css`
 `;
 
 export const mainNavLogo = css`
+  @import url('https://fonts.googleapis.com/css2?family=Kreon&family=Prosto+One&display=swap');
+
+  font-family: 'Prosto One', cursive;
+  font-size: 24px;
   text-decoration: none;
   color: #fff;
 `;

@@ -49,10 +49,10 @@ const ProductsSection = () => {
   return (
     <section css={[defaultSection,productsSection]}>
       <h2>Our Products</h2>
+      <Link css={productBtn} to="/products">See all products</Link>
       <div css={productsContainer}>
         {createProductsTemplate}
       </div>
-      <Link css={productBtn} to="/products">See all products</Link>
     </section>
   )
 }

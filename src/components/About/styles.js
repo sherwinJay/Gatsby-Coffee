@@ -13,4 +13,17 @@ export const aboutContainer = css`
   & p {
    margin-bottom: 25px; 
   }
+
+  @media screen and (max-width: 760px){
+    grid-template-columns: 1fr;
+  }
 `;
+
+export const aboutImg = css`
+  @media screen and (max-width: 760px){
+    height: 500px;
+  }
+  @media screen and (max-width: 460px){
+    height: 300px;
+  }
+`

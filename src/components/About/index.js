@@ -2,7 +2,7 @@ import React from 'react'
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import {useStaticQuery, graphql} from 'gatsby';
-import { aboutContainer } from './styles';
+import { aboutContainer, aboutImg } from './styles';
 import Img from "gatsby-image";
 import { defaultSection } from '../styles/main';
 import TitleSection from '../PageTitle';
@@ -40,7 +40,7 @@ const AboutUs = () => {
         bgImage={backgroundImageData.childImageSharp.fluid} 
       />
       <div css={[defaultSection, aboutContainer]}>
-        <Img fluid={data.childImageSharp.fluid} />
+        <Img css={aboutImg} fluid={data.childImageSharp.fluid} />
         <div>
           <p>
             Bitters scenester austin, food truck slow-carb shabby chic enamel pin prism man braid wolf. Polaroid deep v heirloom pitchfork next level. Ethical copper mug vinyl cloud bread, trust fund godard artisan jianbing. Beard biodiesel bitters everyday carry forage truffaut mixtape. Slow-carb fanny pack banh mi trust fund swag small batch VHS farm-to-table tattooed schlitz chillwave DIY yr. Hoodie marfa flexitarian cardigan literally air plant actually etsy jianbing chillwave.

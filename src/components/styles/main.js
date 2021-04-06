@@ -1,10 +1,12 @@
 /** @jsx jsx */
 import { Global, css, jsx } from "@emotion/react"
 
+
 export const GlobalStyle = () => {
   return(
     <Global
       styles={css`
+        @import url('https://fonts.googleapis.com/css2?family=Kreon&family=Prosto+One&display=swap');
         body {
           font-family: 'Roboto', sans-serif;
           margin: 0;
@@ -12,6 +14,14 @@ export const GlobalStyle = () => {
           box-sizing: border-box;
           position: relative;
           min-height: 100vh;
+          font-size: 15px;
+        }
+        h1, h2, h3, h4, .logo{
+          font-family: 'Prosto One', cursive;
+          color: #29180b;
+        }
+        h2{
+          font-size: 32px;
         }
         ul{
           padding: 0;

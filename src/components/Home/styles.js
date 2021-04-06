@@ -34,14 +34,19 @@ export const defaultSection = css`
 export const productsSection = css`
   display: grid;
   grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   
   & h2 {
     margin-bottom: 0;
+    text-align: left;
   }
 `;
 
 export const productsContainer = css`
+  grid-column-start: 1;
+  grid-column-end: 3;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -61,16 +66,18 @@ export const productImageWrapper = css`
 export const productBtn = css`
   text-align: center;
   padding: 10px 0;
-  border: 1px solid #66462f;;
+  background-color: #66462f;
   width: 150px;
-  margin: 0 auto;
   text-decoration: none;
-  color: #66462f;
+  color:#fff;
+  border: 1px solid #66462f;
   transition: all 0.3s ease-in-out;
+  display: grid;
+  justify-self: end;
 
   &:hover{
-    background-color: #66462f;
-    color:#fff;
+    background-color: #fff;
+    color: #66462f;
   }
 `;
 
@@ -82,6 +89,11 @@ export const aboutContainer = css`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   align-items: center;
+
+  & h2 {
+    text-align: left;
+    margin-bottom: 30px;
+  }
 
   @media screen and (max-width: 900px){
     grid-template-columns: 1fr;
@@ -95,6 +107,10 @@ export const reservationSection = css`
   color: #fff;
   line-height: 24px;
   text-align: center;
+
+  h2{
+    color: #fff;
+  }
 `;
 export const reservationContainer = css`
   padding: 120px 0;
