@@ -10,6 +10,10 @@ export const aboutContainer = css`
   grid-template-columns: 300px auto;
   grid-gap: 25px;
 
+  & h3 {
+    font-size: 22px;
+  }
+
   & p {
    margin-bottom: 25px; 
   }

@@ -32,10 +32,10 @@ const ProductsSection = () => {
     }    
   } = useStaticQuery(getProductData);
 
-  const createProductsTemplate = data.map(product => {
+  const createProductsTemplate = data.map((product, idx) => {
     return (
       <div key={product.id}>
-        <Img css={productImageWrapper}
+        <Img className={`product-image-${idx}`} css={productImageWrapper}
           src={product.image.childImageSharp.fluid.src} 
           alt={product.name}
           fluid={product.image.childImageSharp.fluid} 
@@ -43,8 +43,6 @@ const ProductsSection = () => {
       </div>
     )
   })
-
-  console.log(data)
 
   return (
     <section css={[defaultSection,productsSection]}>

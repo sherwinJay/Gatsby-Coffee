@@ -6,14 +6,26 @@
     "button": "check now"
   },
   {
-    "name": "Green Tea",
-    "image": "../assets/images/home-tea.jpg",
+    "name": "Orange Juice",
+    "image": "../assets/images/home-juice.jpg",
     "alt": "",
     "button": "check now"
   },
   {
-    "name": "Orange Juice",
-    "image": "../assets/images/home-juice.jpg",
+    "name": "Ice-cream",
+    "image": "../assets/images/ice-cream.jpg",
+    "alt": "",
+    "button": "check now"
+  },
+  {
+    "name": "Healthy Juice",
+    "image": "../assets/images/healthy-juice.jpg",
+    "alt": "",
+    "button": "check now"
+  },
+  {
+    "name": "Green Tea",
+    "image": "../assets/images/home-tea.jpg",
     "alt": "",
     "button": "check now"
   }

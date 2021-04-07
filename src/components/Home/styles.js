@@ -49,18 +49,107 @@ export const productsContainer = css`
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+
+  & > :nth-of-type(1){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 250px;
+  }
+  & > :nth-of-type(2){
+   grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 250px;
+  }
+
+  & > :nth-of-type(3){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100%;
+    max-height: 515px;
+  }
+
+  & > :nth-of-type(4){
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 250px;
+    background: #ccc;
+  }
+
+  & > :nth-of-type(5){
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 250px;
+    background: #ccc;
+  }
 
   @media screen and (max-width: 760px){
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+
+    & > :nth-of-type(1){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 250px;
   }
-  @media screen and (max-width: 550px){
+  & > :nth-of-type(2){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 250px;
+  }
+
+  & > :nth-of-type(3){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  & > :nth-of-type(4){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 250px;
+    background: #ccc;
+  }
+
+  & > :nth-of-type(5){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 250px;
+    background: #ccc;
+  }
+
+    & > div {
+      height: 100%;
+    }
+  }
+  /* @media screen and (max-width: 550px){
     grid-template-columns: 1fr;
-  }
+  } */
 `;
 
 export const productImageWrapper = css`
-  height: 250px;
+  height: 100% !important;
 `;
 
 export const productBtn = css`
