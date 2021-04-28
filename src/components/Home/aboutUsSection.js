@@ -1,7 +1,6 @@
-import React from 'react'
 /** @jsx jsx */
-import { css, jsx } from "@emotion/react";
-import {useStaticQuery, graphql } from 'gatsby';
+import { jsx } from "@emotion/react";
+import { useStaticQuery, graphql } from 'gatsby';
 import Img from "gatsby-image";
 import { aboutSection, defaultSection, aboutContainer} from './styles';
 

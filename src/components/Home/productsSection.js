@@ -1,7 +1,5 @@
-import React from 'react';
-
 /** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { jsx } from "@emotion/react";
 import {useStaticQuery, graphql, Link } from 'gatsby';
 import Img from "gatsby-image";
 import { defaultSection, productBtn, productImageWrapper, productsContainer, productsSection } from './styles';

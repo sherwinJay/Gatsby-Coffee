@@ -51,6 +51,16 @@ export const productsItemsContainer = css`
   align-items: center;
   padding: 0 10px 25px;
  `
+ export const seeMore = css`
+  background-color: #66462f;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  display: inline;
+  width: 100px;
+  text-align: center;
+  `
 
  export const active = css `
   background-color: #000;

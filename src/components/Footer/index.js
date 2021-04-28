@@ -1,6 +1,5 @@
-import React from "react";
 /** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { jsx } from "@emotion/react";
 
 import { footerContainer, copyright, socialmediaContainer, footerWrapper } from "./styles";
 import {FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaLinkedin} from 'react-icons/fa'

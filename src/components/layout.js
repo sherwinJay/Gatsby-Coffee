@@ -1,10 +1,6 @@
-import React, {useState} from "react"
-import Header from "./Header"
-
-/** @jsx jsx */
-import { css, jsx } from "@emotion/react";
-
-import { GlobalStyle } from "./styles/main"
+import React, {useState} from "react";
+import Header from "./Header";
+import { GlobalStyle } from "./styles/main";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 

@@ -2,7 +2,7 @@ import React from 'react';
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import Img from "gatsby-image";
-import { productsItemsContainer, productInfo } from './styles';
+import { productsItemsContainer, productInfo, seeMore } from './styles';
 import { Link } from 'gatsby';
 
 const ProductItems = ({ productList }) => {
@@ -19,10 +19,8 @@ const ProductItems = ({ productList }) => {
             {product.title}
           </h3>
           {/* <p>{product.description.description}</p> */}
-          <Link to={`/products/${product.slug}`}>
-          <button>
-            ₱{product.price}
-          </button>
+          <Link to={`/products/${product.slug}`} css={seeMore}>
+            See More
           </Link>
         </div>
       </li>

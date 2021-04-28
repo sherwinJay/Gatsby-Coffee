@@ -1,9 +1,7 @@
-import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-
 /** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { jsx } from "@emotion/react";
 
 import {
   mainHeader,
