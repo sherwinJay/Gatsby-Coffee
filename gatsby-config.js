@@ -8,6 +8,13 @@ module.exports = {
     author: `sherwin_suva`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-google-spreadsheets',
+      options: {
+        spreadsheetId: '1pJo1XNyCq9tHb9eMMciJ1Tt1rULp4zKBL71wixlAsx4',
+        apiKey: 'AIzaSyADXVfFzBkZUatJjCd4DtUQ9k7YYpPs7vY'
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -51,6 +58,7 @@ module.exports = {
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.ACCESS_TOKEN,
       },
+
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
