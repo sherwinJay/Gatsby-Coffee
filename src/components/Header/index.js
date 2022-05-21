@@ -19,7 +19,7 @@ import { FaBars } from "react-icons/fa";
 const navItems = navData.map((navItem, idx) => {
   return(
     <li key={idx}>
-      <Link css={mainNavLinks} to={navItem.link}>{navItem.title}</Link>
+      <Link css={mainNavLinks} to={navItem.link}  activeClassName="active">{navItem.title}</Link>
     </li>
   )
 });

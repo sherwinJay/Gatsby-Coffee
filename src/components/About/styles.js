@@ -24,6 +24,8 @@ export const aboutContainer = css`
 `;
 
 export const aboutImg = css`
+  box-shadow: 4px 4px 8px 1px #aaa;
+
   @media screen and (max-width: 760px){
     height: 500px;
   }

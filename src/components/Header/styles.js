@@ -5,6 +5,9 @@ export const mainHeaderContainer = css`
   /* background-color: #01bf71; */
   background-color: #66462f;
   position: relative;
+  & .active {
+    background-color: #442d1d;
+  }
 `;
 export const mainHeader = css`
   display: grid;
@@ -50,7 +53,12 @@ export const mainNavLogo = css`
 export const mainNavLinks = css`
   text-decoration: none;
   color: #fff;
-  padding: 0 10px;
+  padding: 8px 18px;
+  border-radius: 15px;
+
+  &:hover{
+    background-color: #442d1d;
+  }
 `;
 
 export const mobileIcon = css`

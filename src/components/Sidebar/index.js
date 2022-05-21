@@ -13,7 +13,7 @@ const Sidebar = ({isOpen, toggle}) => {
 const navItems = navData.map((navItem, idx) => {
   return(
     <li key={idx}>
-      <Link css={sideNavLinks} to={navItem.link}>{navItem.title}</Link>
+      <Link css={sideNavLinks} activeClassName="active" to={navItem.link}>{navItem.title}</Link>
     </li>
   )
 });

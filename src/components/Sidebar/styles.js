@@ -23,6 +23,10 @@ export const sidebarContainer = ({ isOpen }) => css`
   & li {
     padding: 10px 0;
   }
+
+  & li.active{
+    border-bottom: 1px solid #66462f;
+  }
 `;
 
 export const sidebarMenu = css`
@@ -41,6 +45,10 @@ export const sideNavLinks = css`
  font-size: 18px;
  text-decoration: none;
  padding: 10px 0;
+
+ &.active{
+    border-bottom: 3px solid #aa7c5a;
+  }
 `;
 
 export const iconWrapper = css`

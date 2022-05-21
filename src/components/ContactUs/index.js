@@ -2,7 +2,7 @@ import React from 'react';
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import {useStaticQuery, graphql} from 'gatsby';
-import { contactContainer } from './styles';
+import { contactContainer, contactWrapper } from './styles';
 import { defaultSection } from '../styles/main';
 import TitleSection from '../PageTitle';
 
@@ -24,7 +24,7 @@ const ContactUs = () => {
   } = useStaticQuery(imageData);
 
   return (
-      <>
+      <div css={contactWrapper}>
         <TitleSection 
           title={"Contact Us"} 
           bgImage={backgroundImageData.childImageSharp.fluid} 
@@ -38,7 +38,7 @@ const ContactUs = () => {
             <button type="submit">Submit</button>
           </form>    
         </div>
-      </>
+      </div>
     )
 }
 
