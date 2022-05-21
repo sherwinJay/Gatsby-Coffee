@@ -4,7 +4,7 @@ import { css, jsx } from "@emotion/react";
 import { productsContainer, categoryListSection } from './styles';
 import {useStaticQuery, graphql, Link } from 'gatsby';
 import { useState } from 'react';
-import { defaultSection } from '../styles/main';
+import { defaultSection, mainWrapper } from '../styles/main';
 import TitleSection from '../PageTitle';
 import ProductCategory from './productCategory';
 import ProductItems from './productItems';
@@ -62,7 +62,7 @@ const Products = () => {
   }
 
   return (
-    <>
+    <div css={mainWrapper}>
       <TitleSection
         title={"Our Products"} 
         bgImage={backgroundImageData.childImageSharp.fluid} 
@@ -75,7 +75,7 @@ const Products = () => {
 
         <ProductItems productList={productList} />
       </div>
-    </>
+    </div>
   )
 }
 

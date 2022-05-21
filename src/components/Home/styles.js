@@ -168,6 +168,13 @@ export const productBtn = css`
     background-color: #fff;
     color: #66462f;
   }
+
+  @media screen and (max-width: 480px){
+    height: max-content;
+    align-self: center;
+    width: auto;
+    padding: 15px 10px;
+  }
 `;
 
 export const aboutSection = css`

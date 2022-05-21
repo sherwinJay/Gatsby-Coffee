@@ -85,3 +85,7 @@ export const defaultSection = css`
     }
   }
   `;
+
+  export const mainWrapper = css`
+    min-height: 90vh;
+  `;

@@ -4,7 +4,7 @@ import { css, jsx } from "@emotion/react";
 import {useStaticQuery, graphql} from 'gatsby';
 import { aboutContainer, aboutImg } from './styles';
 import Img from "gatsby-image";
-import { defaultSection } from '../styles/main';
+import { defaultSection, mainWrapper } from '../styles/main';
 import TitleSection from '../PageTitle';
 
 const imageData = graphql`
@@ -34,7 +34,7 @@ const AboutUs = () => {
 
 
   return (
-    <>
+    <div css={mainWrapper}>
       <TitleSection 
         title={"About Us"} 
         bgImage={backgroundImageData.childImageSharp.fluid} 
@@ -54,7 +54,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
