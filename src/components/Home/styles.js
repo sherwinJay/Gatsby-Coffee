@@ -26,6 +26,7 @@ export const defaultSection = css`
 
     & h2{
       margin: 0 0 30px;
+      line-height: 35px;
     }
   }
 
@@ -189,6 +190,7 @@ export const aboutContainer = css`
   & h2 {
     text-align: left;
     margin-bottom: 30px;
+    line-height: 32px;
   }
 
   @media screen and (max-width: 900px){
@@ -204,8 +206,9 @@ export const reservationSection = css`
   line-height: 24px;
   text-align: center;
 
-  h2{
+  & h2{
     color: #fff;
+    line-height: 32px;
   }
 `;
 export const reservationContainer = css`

@@ -64,10 +64,12 @@ export const kvContent = css`
   @media screen and (max-width: 500px) {
     & h2 {
       font-size: 38px;
+      line-height: 54px;
     }
     & p {
       font-size: 16px;
       line-height: 22px;
+      padding: 7px 15px;
     }
   }
 `;

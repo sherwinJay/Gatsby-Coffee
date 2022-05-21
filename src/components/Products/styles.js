@@ -36,7 +36,7 @@ export const productsItemsContainer = css`
   list-style: none;
 
   & li {
-    box-shadow: 0 0 3px 1px #555;
+    box-shadow: 0 0 8px 1px #ccc;
   }
 
   @media screen and (max-width: 760px){
